@@ -1,0 +1,27 @@
+{
+    "name": "urbandigital/perfex-mcp-connector",
+    "description": "Turns Perfex CRM into an MCP (Model Context Protocol) server for AI clients like Claude.",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.1",
+        "ext-json": "*",
+        "ext-fileinfo": "*",
+        "mcp/sdk": "0.8.1",
+        "nyholm/psr7": "^1.8",
+        "nyholm/psr7-server": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "PerfexMcp\\": "src/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "8.1.99"
+        },
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
